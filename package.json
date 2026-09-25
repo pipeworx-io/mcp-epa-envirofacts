@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-epa-envirofacts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "US EPA Envirofacts MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-8ba1546d9e1daf26de1d7dc3b4084f06751618620738b20e233066106895451c",
-    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
+    "sourceHash": "v1-587f05a7950816a70851f5bd59f344ddd96479898f4ed18ba5bbc3a74d3b2067",
+    "sourceCommit": "4fa4c64448be06f4a2ee4cee19f756f3558a7cad"
   }
 }
