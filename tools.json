@@ -1,0 +1,62 @@
+[
+  {
+    "name": "facilities_by_zip",
+    "description": "List EPA-regulated facilities in a US ZIP code from the EPA Facility Registry Service (FRS). Returns each facility once with all the EPA programs (RCRAINFO, NPDES, AIRS, TRI, etc.) it's regulated under. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "zip": {
+          "type": "string",
+          "description": "5-digit US ZIP code, e.g. \"94704\"."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max rows to fetch (default 20, max 50)."
+        }
+      },
+      "required": [
+        "zip"
+      ]
+    }
+  },
+  {
+    "name": "facilities_by_state",
+    "description": "List EPA-regulated facilities in a US state (and optionally a city) from the EPA Facility Registry Service (FRS). Returns each facility once with all the EPA programs it is regulated under. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "type": "string",
+          "description": "2-letter US state code, e.g. \"CA\"."
+        },
+        "city": {
+          "type": "string",
+          "description": "Optional city name, e.g. \"Berkeley\"."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max rows to fetch (default 20, max 50)."
+        }
+      },
+      "required": [
+        "state"
+      ]
+    }
+  },
+  {
+    "name": "get_facility",
+    "description": "Look up one EPA-regulated facility by its FRS Registry ID. Returns the facility detail plus a programs[] array listing every EPA program (RCRAINFO, NPDES, AIRS, TRI, etc.) the site is regulated under. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "registry_id": {
+          "type": "string",
+          "description": "FRS Registry ID, e.g. \"110066524112\"."
+        }
+      },
+      "required": [
+        "registry_id"
+      ]
+    }
+  }
+]

@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-epa-envirofacts",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "US EPA Envirofacts MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-epa-envirofacts": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "epa-envirofacts"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-epa-envirofacts.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/epa-envirofacts",
   "pipeworx": {
-    "sourceHash": "v1-dac95aec6c4355ef4d1647d239cb40ea6efef912c0b9519347af6ac4485124fd",
-    "sourceCommit": "722087a9bda73f85942e8f6bbfd598544cb0d490"
+    "mode": "gateway",
+    "slug": "epa-envirofacts",
+    "gatewaySlug": "epa-envirofacts",
+    "sourceHash": "v1-f2b74fc89f517bd064205a4385621a25fc71b990464ce3c1678a9a97918a3f66",
+    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
   }
 }
