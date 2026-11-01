@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-epa-envirofacts",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "US EPA Envirofacts MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "epa-envirofacts",
     "gatewaySlug": "epa-envirofacts",
-    "sourceHash": "v1-f2b74fc89f517bd064205a4385621a25fc71b990464ce3c1678a9a97918a3f66",
-    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
+    "sourceHash": "v1-e0da7ef292d7ccdcc441011798faea854a5dfc6de840de9a277f7dcec8316cae",
+    "sourceCommit": "d35e32c1ffe988e24d391dedb35666387fd2b3d6"
   }
 }
